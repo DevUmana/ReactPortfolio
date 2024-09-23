@@ -6,6 +6,7 @@ export default function Form() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   function handleInputChange(e) {
     const { target } = e;
@@ -23,11 +24,46 @@ export default function Form() {
     }
   }
 
+  function handleInputError(e) {
+    let errorMessage = "";
+  
+    // Regular expression to validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+    if (!name && !email && !message) {
+      errorMessage = "Please fill out all fields.";
+    } else if (!name && !email) {
+      errorMessage = "Please enter your name and email.";
+    } else if (!name && !message) {
+      errorMessage = "Please enter your name and message.";
+    } else if (!email && !message) {
+      errorMessage = "Please enter your email and message.";
+    } else if (!name) {
+      errorMessage = "Please enter your name.";
+    } else if (!email) {
+      errorMessage = "Please enter your email.";
+    } else if (!emailRegex.test(email)) {
+      errorMessage = "Please enter a valid email address.";
+    } else if (!message) {
+      errorMessage = "Please enter your message.";
+    }
+  
+    if (errorMessage) {
+      setError(true);
+      setErrorMessage(errorMessage);
+    } else {
+      setError(false);
+      setErrorMessage(""); // Clear the error message if all fields are filled correctly
+    }
+  }
+  
+
   function handleFormSubmit(e) {
     e.preventDefault();
 
     if (!name || !email || !message) {
       setError(true);
+      setErrorMessage("Please fill out all fields.");
       return;
     }
 
@@ -48,6 +84,7 @@ export default function Form() {
           placeholder="Enter your name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          onMouseLeave={handleInputError}
         />
       </div>
       <div>
@@ -58,6 +95,7 @@ export default function Form() {
           placeholder="Enter your email"
           onChange={handleInputChange}
           value={email}
+          onMouseLeave={handleInputError}
         />
       </div>
       <div>
@@ -68,15 +106,10 @@ export default function Form() {
           placeholder="Leave a message"
           onChange={handleInputChange}
           value={message}
+          onMouseLeave={handleInputError}
         />
       </div>
-      <div>
-        {error && (
-          <p className="error">
-            A Jedi must have patience. Complete all fields, you must.
-          </p>
-        )}
-      </div>
+      <div>{error && <p className="error">{errorMessage}</p>}</div>
       <div>
         <button className="submit" type="submit" id="submit">
           {" "}
