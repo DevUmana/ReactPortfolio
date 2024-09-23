@@ -1,9 +1,10 @@
 import "../styles/AboutMe.css";
+import babyYoda from "../assets/babyYoda.jpg";
 
 export default function AboutMe() {
   return (
     <div className="wrapper">
-      <img src="src/assets/babyYoda.jpg" alt="Baby Yoda Picture" />
+      <img src={babyYoda} alt="Baby Yoda Picture" />
       <section className="star-wars">
         <div className="crawl">
           <div className="title">
