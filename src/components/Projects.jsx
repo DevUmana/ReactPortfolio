@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Projects.css";
+import githubLogo from "../assets/github-logo.png";
 
 export default function Projects(props) {
   const [hoveredLink1, setHoveredLink1] = useState(false);
@@ -57,7 +58,7 @@ export default function Projects(props) {
             onMouseEnter={handleHoverEnter}
             onMouseLeave={handleHoverLeave}
           >
-            <img src="src/assets/github-logo.png" alt="GitHub Logo" />
+            <img src={githubLogo} alt="GitHub Logo" />
           </a>
         </div>
       </div>

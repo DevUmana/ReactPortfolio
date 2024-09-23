@@ -1,4 +1,7 @@
 import "../styles/Footer.css";
+import gitHubLogo from "../assets/github-logo.png";
+import linkedInLogo from "../assets/linkedin-with-circle.svg";
+import stackOverflowLogo from "../assets/stack-overflow.svg";
 
 export default function Footer() {
   return (
@@ -12,7 +15,7 @@ export default function Footer() {
           >
             <img
               className="img-footer"
-              src="src/assets/github-logo.png"
+              src={gitHubLogo}
               alt="GitHub Profile"
             />
           </a>
@@ -25,7 +28,7 @@ export default function Footer() {
           >
             <img
               className="img-footer"
-              src="src/assets/linkedin-with-circle.svg"
+              src={linkedInLogo}
               alt="LinkedIn Profile"
             />
           </a>
@@ -38,7 +41,7 @@ export default function Footer() {
           >
             <img
               className="img-footer"
-              src="src/assets/stack-overflow.svg"
+              src={stackOverflowLogo}
               alt="Stack Overflow Profile"
             />
           </a>
