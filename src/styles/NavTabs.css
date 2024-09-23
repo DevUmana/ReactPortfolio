@@ -1,0 +1,31 @@
+.nav-style {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.nav-link-style {
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.nav-link-style:hover {
+  color: var(--secondary-color);
+}
+
+.active-link {
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-style {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+  }
+  
+}
