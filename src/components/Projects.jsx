@@ -60,6 +60,8 @@ export default function Projects(props) {
           >
             <img src={githubLogo} alt="GitHub Logo" />
           </a>
+          <p
+          >{project.stack}</p>
         </div>
       </div>
     );

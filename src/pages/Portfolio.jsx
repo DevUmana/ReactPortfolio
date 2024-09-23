@@ -7,6 +7,7 @@ const projects = [
     title: "WeatherPulse",
     url: "https://weatherpulse-v7qx.onrender.com/",
     github: "https://github.com/DevUmana/WeatherPulse",
+    stack: "MERN",
     background: "#610d00",
   },
   {
@@ -14,6 +15,7 @@ const projects = [
     title: "Travels Guide",
     url: "https://devumana.github.io/New-Travels-Guide/",
     github: "https://github.com/DevUmana/New-Travels-Guide",
+    stack: "HTML, CSS, JavaScript",
     background: "#3b382b",
   },
   {
@@ -21,6 +23,7 @@ const projects = [
     title: "Portfolio",
     url: "https://devumana.github.io/02-challenge-portfolio/",
     github: "https://github.com/DevUmana/02-challenge-portfolio",
+    stack: "HTML, CSS",
     background: "#374739",
   },
   {
@@ -28,7 +31,24 @@ const projects = [
     title: "CSS Snippet Cheatsheet",
     url: "https://devumana.github.io/02-28-mini-project/",
     github: "https://github.com/DevUmana/02-28-mini-project",
+    stack: "HTML, CSS",
     background: "#283b34",
+  },
+  {
+    id: 5,
+    title: "Vehicle Builder",
+    url: "https://github.com/DevUmana/Vehicle-Builder",
+    github: "https://github.com/DevUmana/Vehicle-Builder",
+    stack: "React, Node.js, Express, MySQL",
+    background: "#610d00",
+  },
+  {
+    id: 6,
+    title: "Employee Tracker",
+    url: "https://github.com/DevUmana/Employee-Tracker",
+    github: "https://github.com/DevUmana/Employee-Tracker",
+    stack: "Node.js, MySQL",
+    background: "#3b382b",
   },
 ];
 
