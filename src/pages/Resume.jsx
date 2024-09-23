@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Resume.css";
+import resumePDF from "../assets/resume.pdf";
 
 export default function Resume() {
   return (
@@ -8,7 +9,7 @@ export default function Resume() {
       <div className="resumeDownload">
         <p>
           Download my
-          <a href="src/assets/resume.pdf" download="resume.pdf">
+          <a href={resumePDF} download="resume.pdf">
             <button type="button">Resume</button>
           </a>
         </p>
