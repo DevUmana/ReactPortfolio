@@ -39,7 +39,7 @@ const projects = [
     title: "Vehicle Builder",
     url: "https://github.com/DevUmana/Vehicle-Builder",
     github: "https://github.com/DevUmana/Vehicle-Builder",
-    stack: "React, Node.js, Express, MySQL",
+    stack: "Typescript",
     background: "#610d00",
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     title: "Employee Tracker",
     url: "https://github.com/DevUmana/Employee-Tracker",
     github: "https://github.com/DevUmana/Employee-Tracker",
-    stack: "Node.js, MySQL",
+    stack: "Node.js, MySQL, Typescript",
     background: "#3b382b",
   },
 ];
