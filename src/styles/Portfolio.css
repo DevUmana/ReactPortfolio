@@ -1,22 +1,25 @@
 .portfolio {
-    display: grid;
-    grid-template-columns: fit-content(700px) fit-content(700px); /* 2 columns with a maximum width of 700px */
-    grid-template-rows: auto auto; /* 2 rows with automatic height */
-    align-content:  center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    justify-items: center; /* Center items horizontally */
-    padding: 1rem; /* Padding around the grid */
+  display: grid;
+  grid-template-columns: fit-content(700px) fit-content(700px); /* 2 columns with a maximum width of 700px */
+  grid-template-rows: auto auto; /* 2 rows with automatic height */
+  align-content: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  justify-items: center; /* Center items horizontally */
+  padding: 1rem; /* Padding around the grid */
 }
 
 @media screen and (max-width: 1024px) {
-    .portfolio {
-        grid-template-columns: fit-content(500px); /* 1 column with a maximum width of 500px */
-    }
-    
+  .portfolio {
+    grid-template-columns: fit-content(
+      500px
+    ); /* 1 column with a maximum width of 500px */
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .portfolio {
-        grid-template-columns: fit-content(100px); /* 1 column with a maximum width of 200px */
-    }
+  .portfolio {
+    grid-template-columns: fit-content(
+      100px
+    ); /* 1 column with a maximum width of 200px */
+  }
 }

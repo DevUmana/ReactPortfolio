@@ -3,25 +3,27 @@ import "../styles/Projects.css";
 import githubLogo from "../assets/github-logo.png";
 
 export default function Projects(props) {
+  // Set the initial state of the hoveredLink to false
   const [hoveredLink1, setHoveredLink1] = useState(false);
   const [hoveredLink2, setHoveredLink2] = useState(false);
 
+  // Function to handle the hover enter effect
   function handleHoverEnter(e) {
     e.preventDefault();
 
     if (e.target.classList.contains("project-links-1")) {
       setHoveredLink1(true);
-      setHoveredLink2(false); // Keep link2 faded
+      setHoveredLink2(false);
     } else if (e.target.classList.contains("project-link-2")) {
       setHoveredLink2(true);
-      setHoveredLink1(false); // Keep link1 faded
+      setHoveredLink1(false);
     }
   }
 
+  // Function to handle the hover leave effect
   function handleHoverLeave(e) {
     e.preventDefault();
 
-    // When the mouse leaves, we return both to their original states
     if (e.target.classList.contains("project-links-1")) {
       setHoveredLink1(false);
     } else if (e.target.classList.contains("project-link-2")) {
@@ -29,8 +31,8 @@ export default function Projects(props) {
     }
   }
 
+  // Map over the projects array to display each project
   return props.projects.map((project, index) => {
-
     const projectStyle = {
       background: project.background,
     };
@@ -60,8 +62,7 @@ export default function Projects(props) {
           >
             <img src={githubLogo} alt="GitHub Logo" />
           </a>
-          <p
-          >{project.stack}</p>
+          <p>{project.stack}</p>
         </div>
       </div>
     );
