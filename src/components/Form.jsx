@@ -2,12 +2,14 @@ import { useState } from "react";
 import "../styles/Form.css";
 
 export default function Form() {
+  // Creating state variables to store the form data
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
+  // Function to handle input changes
   function handleInputChange(e) {
     const { target } = e;
     const inputType = target.id;
@@ -24,12 +26,13 @@ export default function Form() {
     }
   }
 
+  // Function to handle errors
   function handleInputError(e) {
     let errorMessage = "";
-  
+
     // Regular expression to validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  
+
     if (!name && !email && !message) {
       errorMessage = "Please fill out all fields.";
     } else if (!name && !email) {
@@ -47,17 +50,17 @@ export default function Form() {
     } else if (!message) {
       errorMessage = "Please enter your message.";
     }
-  
+
     if (errorMessage) {
       setError(true);
       setErrorMessage(errorMessage);
     } else {
       setError(false);
-      setErrorMessage(""); // Clear the error message if all fields are filled correctly
+      setErrorMessage("");
     }
   }
-  
 
+  // Function to handle form submission
   function handleFormSubmit(e) {
     e.preventDefault();
 

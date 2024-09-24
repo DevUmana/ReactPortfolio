@@ -10,11 +10,11 @@
   cursor: pointer;
 }
 
-.resumeDownload button  {
-    border: none;
-    background-color: #8e856300;
-    color: #b4931f;
-    font-size: 20px;
+.resumeDownload button {
+  border: none;
+  background-color: #8e856300;
+  color: #b4931f;
+  font-size: 20px;
 }
 
 .resumeDownload:hover button {
@@ -34,22 +34,22 @@
   margin: 0;
 }
 .resume li {
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-    margin: 0 auto;
-    text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin: 0 auto;
+  text-decoration: none;
 }
 
 .frontend {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .backend {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
 }

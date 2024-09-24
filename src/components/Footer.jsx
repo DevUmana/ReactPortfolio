@@ -13,11 +13,7 @@ export default function Footer() {
             href="https://github.com/DevUmana"
             target="_blank"
           >
-            <img
-              className="img-footer"
-              src={gitHubLogo}
-              alt="GitHub Profile"
-            />
+            <img className="img-footer" src={gitHubLogo} alt="GitHub Profile" />
           </a>
         </li>
         <li className="li-footer">
