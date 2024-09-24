@@ -63,42 +63,28 @@ I am open to any feedback and improvements that others may have!
 - **Scenario:** User clicks on a navigation link
   - **Given:** The user is viewing the app on any device
   - **When:** The user clicks on a link in the navigation bar
-  - **Then:** The app should smoothly scroll to the corresponding section on the page
+  - **Then:** The app should smoothly transition the page
 
 ### About Section
 
 - **Scenario:** Viewing the "About" section
   - **Given:** The user navigates to the "About" section
   - **When:** The section is loaded
-  - **Then:** The user should see a bio, a professional head shot/avatar, and key information like the developer's name, role, and location
+  - **Then:** The user should see a bio and a professional head shot/avatar/icon
 
-### Projects Section
+### Portfolio Section
 
-- **Scenario:** Viewing the "Projects" section
-  - **Given:** The user views the "Projects" section
+- **Scenario:** Viewing the "Portfolio" section
+  - **Given:** The user views the "Portfolio" section
   - **When:** The section loads
-  - **Then:** The user should see at least three project cards, each displaying a project title, brief description, technologies used, a link to a live demo, and a GitHub repository link
+  - **Then:** The user should see at least three project cards, each displaying a project title, technologies used, a link to a live demo, and a GitHub repository link
 
-### Skills Section
+### Resume Section
 
-- **Scenario:** Viewing the "Skills" section
-  - **Given:** The user navigates to the "Skills" section
+- **Scenario:** Viewing the "Resume" section
+  - **Given:** The user navigates to the "Resume" section
   - **When:** The section loads
-  - **Then:** The user should see a list of technical skills displayed as labels or icons (e.g., HTML, CSS, JavaScript, React)
-
-### Responsive Design
-
-- **Scenario:** Viewing the app on different device sizes
-  - **Given:** The user is viewing the app on any device size (desktop, tablet, or mobile)
-  - **When:** They resize the window or switch to another device
-  - **Then:** The app content should adjust responsively without breaking or overlapping
-
-### Reusable Components
-
-- **Scenario:** Updating app content
-  - **Given:** The developer is updating content in the app
-  - **When:** They update any section (About, Projects, Skills, Contact)
-  - **Then:** The updates should be reflected using the reusable React components
+  - **Then:** The user should see a list of technical skills displayed as labels (e.g., HTML, CSS, JavaScript, React)
 
 ### Contact Section
 
@@ -107,19 +93,19 @@ I am open to any feedback and improvements that others may have!
   - **When:** The user submits the contact form with their name, email, and message
   - **Then:** The form should validate the inputs and display a success or failure message based on form submission status
 
+### Responsive Design
+
+- **Scenario:** Viewing the app on different device sizes
+  - **Given:** The user is viewing the app on any device size (desktop, tablet, or mobile)
+  - **When:** They resize the window or switch to another device
+  - **Then:** The app content should adjust responsively without breaking or overlapping
+
 ### Social Media Integration
 
 - **Scenario:** Viewing social media icons
-  - **Given:** The user is viewing the "About" section or the footer
-  - **When:** The section or footer is visible
-  - **Then:** The user should see clickable social media icons (LinkedIn, GitHub, Twitter) that link to the developer's social profiles
-
-### Project Filtering (Optional)
-
-- **Scenario:** Filtering projects by technology
-  - **Given:** The user is viewing the "Projects" section
-  - **When:** They select a technology filter (e.g., React, JavaScript, CSS)
-  - **Then:** The projects displayed should update to show only those that match the selected technology
+  - **Given:** The user is viewing the footer
+  - **When:** The footer is visible
+  - **Then:** The user should see clickable social media icons (GitHub, LinkedIn, Stack Overflow) that link to the developer's social profiles
 
 ### Smooth Page Transitions and Animations
 
