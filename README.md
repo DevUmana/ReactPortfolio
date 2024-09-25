@@ -26,7 +26,7 @@ The app displays personal details, technical skills, project highlights, and con
 ## Usage
 
 Application Site [https://main--devumanaportfolio.netlify.app/](https://main--devumanaportfolio.netlify.app/)
-Application Walkthrough [TBD](TBD)
+Application Walkthrough [https://drive.google.com/file/d/1567ecgZFuo3i5IGMi1qyPHMl_T-g1P8o/view](https://drive.google.com/file/d/1567ecgZFuo3i5IGMi1qyPHMl_T-g1P8o/view)
 
 ## License
 
